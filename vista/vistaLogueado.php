@@ -11,7 +11,11 @@ include_once "../modelo/conexion.php";
 </head>
 <body>
 <div>
+<<<<<<< HEAD
+<a href="vista/agregarLibro.php">Crear libro</a>
+=======
 <a href="/agregarLibro.php">Crear libro</a>
+>>>>>>> 87f42431f31f64171bc8c8ad20a1d55ab734f26f
 
 </div>
 <a href="../index.php">Cerrar Sesion</a>
