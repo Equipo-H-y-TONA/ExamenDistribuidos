@@ -2,29 +2,16 @@
 include 'conexion.php';
 echo $_POST["nombre"];
 echo "Comentario: <br>".$_POST["comentario"];
-$json=array();
-/*Comprobar si se ha hecho un comentario antes*/
-    if(isset($_GET["fkUsuario"])&& isset($_POST["fkLibro"]) && isset($_POST["comentario"]) && isset($_POST["fecha"])){
-        $fkLibro=$_GET['fkLibro'];
-        $fkUsuario = $_GET['fkUsuario'];
-        $comentario= $_GET['comentario'];
-        $fecha = $_GET['fecha'];
+//if (true) {
+ if (isset($_POST["ID"])) {
 
-        $consulta="insert into comentario (comentario,fecha, fkUsuario, fkLibro) values ('".$comentario."','".$fecha."',".$fkUsuario.", ".$fkLibro.")";  
-        
-        if($resultado=mysqli_query($conexion, $consulta)){
-            $json['usuario'][] =array("exito"=>1,);
-        }else{
-          $resulta['usuario']=array("exito"=>-1,);
-          $json['usuario'][]=$resulta;
-        }
+$FECHA=date("Y-m-d");
+  $ID = $_POST["ID"];
+  $REQ = $_POST["REQ"];
+  
+$sql = $connect->query("INSERT INTO `req_formales` (`ID_REQ_F`, `REQUERIMIENTO`, `FECHA`, `F_REQ_CUMPLIDO`, `FK_PROYECTO`) VALUES (NULL, '".$REQ."', '".$FECHA."', '0', '".$ID."')");
 
-        mysqli_close($conexion);
-        echo json_encode($json);
-    }
-    else{
-      $resulta["exito"]=0;
-      $json['usuario'][]=$resulta;
-      echo json_encode($json);
-    }
+echo $sql;
+
+}
 ?>

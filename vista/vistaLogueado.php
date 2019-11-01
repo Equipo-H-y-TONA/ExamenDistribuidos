@@ -14,6 +14,7 @@ include_once "../modelo/conexion.php";
 
 
 <a href="agregarLibro.php">Crear libro</a>
+<a href="agregarLibro.php">ver comentarios</a>
 
 
 </div>
