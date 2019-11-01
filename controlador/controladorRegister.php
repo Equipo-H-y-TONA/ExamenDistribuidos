@@ -3,11 +3,11 @@
 
  
 
- $host_db = "localhost";
+ $host_db = "192.168.1.106";
 
- $user_db = "root";
+ $user_db = "gabo";
 
- $pass_db = "";
+ $pass_db = "contra";
 
  $db_name = "books";
 
