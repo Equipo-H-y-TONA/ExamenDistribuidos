@@ -48,16 +48,15 @@
  
 
  $form_pass = $_POST['password'];
-
  
 
  $hash = password_hash($form_pass, PASSWORD_BCRYPT);
 
  
 
- $query = "INSERT INTO Usuario (nick, password)
+ $query = "INSERT INTO Usuario (nombre, apellidoPaterno, apellidoMaterno, nick, password)
 
-           VALUES ('$_POST[username]', '$hash')";
+           VALUES ('$_POST[name_user]', '$_POST[ap_paterno]', '$_POST[ap_materno]', '$_POST[username]', '$_POST[password]')";
 
  
 
