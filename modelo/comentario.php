@@ -1,6 +1,6 @@
 <?PHP
 include 'conexion.php';
-echo $_POST["libro"];
+echo $_POST["nombre"];
 
 $json=array();
 /*Comprobar si se ha hecho un comentario antes*/
