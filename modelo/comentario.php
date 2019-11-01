@@ -1,6 +1,7 @@
 <?PHP
-echo $_POST["libro"];
 include 'conexion.php';
+echo $_POST["libro"];
+
 $json=array();
 /*Comprobar si se ha hecho un comentario antes*/
     if(isset($_GET["fkUsuario"])&& isset($_POST["fkLibro"]) && isset($_POST["comentario"]) && isset($_POST["fecha"])){

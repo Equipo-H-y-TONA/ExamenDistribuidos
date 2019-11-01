@@ -11,7 +11,7 @@ include_once "../modelo/conexion.php";
 </head>
 <body>
 <div>
-<a href="vista/vistaLogin.php">login</a>
+<a href="vista/crearLibro.php">Crear libro</a>
 
 </div>
 <a href="vista/vistaLogin.php">Registrate</a>
@@ -55,7 +55,7 @@ foreach($result as $libro){
 
 
     <td><?php  echo $libro["titulo"] ?>;</td>
-    <td><input name="libro" value="<?php  echo $libro["autor"] ?>" ></label></td>
+    <td><input name="libro" value="<?php  echo $libro["autor"]?>"></td>
     <td><button type="submit">comentar</button></td>
 
   
