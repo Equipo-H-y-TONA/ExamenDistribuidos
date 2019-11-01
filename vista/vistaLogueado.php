@@ -1,5 +1,5 @@
 <?php 
-include_once "modelo/conexion.php";
+include_once "../modelo/conexion.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -27,6 +27,10 @@ include_once "modelo/conexion.php";
 
     <td>Autor</td>
 
+    <td>Comentar</td>
+
+<td>eliminar</td>
+    
 
   </tr>
 <?php 
@@ -52,7 +56,8 @@ foreach($result as $libro){
 
     <td><?php  echo $libro["titulo"] ?>;</td>
     <td><?php  echo $libro["autor"] ?>;</td>
-
+    <td><a href="">comentar</a></td>
+    <td><a href="">eliminar</a></td>
   
 
   </tr>

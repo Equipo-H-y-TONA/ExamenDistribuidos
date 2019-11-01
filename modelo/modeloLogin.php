@@ -1,6 +1,7 @@
 <?php
-
+include_once "conexion.php";
 if(isset($_POST["mail"]) && isset($_POST["password"]) ){
+ 
       $mail = $_POST["mail"];
      $password = $_POST["password"];
     
@@ -11,6 +12,12 @@ if(isset($_POST["mail"]) && isset($_POST["password"]) ){
     
         while ($extraer = $sql->fetch_assoc()) {
         $result[] = $extraer;
+    }
+    if(empty($result)){
+echo "usuario no existe";
+header("Location: ../index.php");
+    }else{
+header("Location: ../vista/vistaLogueado.php");
     }
 
     }catch(Exception $e){
