@@ -54,8 +54,8 @@ foreach($result as $libro){
   <tr>
 
 
-    <td><?php  echo $libro["titulo"]; echo "<br> Prueba:".$libro["autor"]; ?>;</td>
-    <td><input name="nombre" value="<?php  echo $libro["autor"]?>"></td>
+    <td><?php  echo $libro["titulo"]; ?>;</td>
+    <td><input name="nombre"></td>
     <td><button type="submit">comentar</button></td>
 
   
