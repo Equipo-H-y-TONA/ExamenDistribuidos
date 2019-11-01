@@ -54,14 +54,13 @@ foreach($result as $libro){
 
 
   
-<form action="../modelo/comentario.php">  
+<form action="../modelo/comentario.php" method="post">  
   <tr>
 
 
     <td><?php  echo $libro["titulo"]; ?>;</td>
-    <td><input name="nombre"></td>
+    <td><input name="nombre" value="<?php  echo $libro["autor"]?>"></td>
     <td><button type="submit">comentar</button></td>
-
   
 
   </tr>
