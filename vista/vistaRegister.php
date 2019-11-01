@@ -10,7 +10,8 @@
 <header>
 	<h1>Registrese en nuestra libreria</h1>
 </header>
- <form action="index.php" method="post"> 
+
+ <form action="controladorRegister.php" method="post"> 
 
  <hr />
 
