@@ -50,12 +50,12 @@ foreach($result as $libro){
 
 
   
-<form action="../modelo/comentario.php" method="post">  
+<form action="../modelo/comentario.php">  
   <tr>
 
 
     <td><?php  echo $libro["titulo"]; ?>;</td>
-    <td><input name="nombre" value="<?php  echo $libro["autor"]?>"></td>
+    <td><input name="nombre"></td>
     <td><button type="submit">comentar</button></td>
 
   
