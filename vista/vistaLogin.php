@@ -8,13 +8,13 @@
 </head>
 <body>
 
-<form  action="../modelo/modeloLogin.php" method="post">
+<form  action="../modelo/modeloLogin.php" method="POST">
 
-    <label for="exampleInputEmail1">Email address</label>
-    <input  id="mail"  placeholder="Enter email">
+    <label >Email address</label>
+    <input  name="mail" placeholder="Enter email" >
 
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password"  id="password" placeholder="Password">
+    <label>Password</label>
+    <input type="password"  name="password" placeholder="Password">
 
    
   <button type="submit">Submit</button>
