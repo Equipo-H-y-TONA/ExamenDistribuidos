@@ -1,5 +1,5 @@
 <?php
-include_once "conexion.php";
+include_once "../modelo/conexion.php";
 if(isset($_POST["titulo"]) && isset($_POST["autor"]) ){
  
       $titulo = $_POST["titulo"];
