@@ -1,4 +1,5 @@
 <?PHP
+echo $_POST["libro"];
 include 'conexion.php';
 $json=array();
 /*Comprobar si se ha hecho un comentario antes*/

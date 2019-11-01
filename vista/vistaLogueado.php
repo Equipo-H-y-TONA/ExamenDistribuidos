@@ -29,7 +29,7 @@ include_once "../modelo/conexion.php";
 
     <td>Comentar</td>
 
-<td>eliminar</td>
+
     
 
   </tr>
@@ -50,19 +50,19 @@ foreach($result as $libro){
 
 
   
-
+<form action="../modelo/comentario.php">  
   <tr>
 
 
     <td><?php  echo $libro["titulo"] ?>;</td>
-    <td><?php  echo $libro["autor"] ?>;</td>
-    <td><a href="">comentar</a></td>
-    <td><a href="">eliminar</a></td>
+    <td><input name="libro" value="<?php  echo $libro["autor"] ?>" ></label></td>
+    <td><button type="submit">comentar</button></td>
+
   
 
   </tr>
 
-
+</form>
     
 <?php 
 
