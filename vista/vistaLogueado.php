@@ -60,6 +60,7 @@ foreach($result as $libro){
 
     <td><?php  echo $libro["titulo"]; ?>;</td>
     <td><input name="nombre" value="<?php  echo $libro["autor"]?>"></td>
+    <td><input name="comentario" ></td>
     <td><button type="submit">comentar</button></td>
   
 
