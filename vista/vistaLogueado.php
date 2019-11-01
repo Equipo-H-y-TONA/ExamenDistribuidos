@@ -14,7 +14,7 @@ include_once "../modelo/conexion.php";
 <a href="vista/crearLibro.php">Crear libro</a>
 
 </div>
-<a href="vista/vistaLogin.php">Registrate</a>
+<a href="../index.php">Cerrar Sesion</a>
 
 </div>
 <br>
