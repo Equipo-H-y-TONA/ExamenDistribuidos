@@ -25,6 +25,24 @@
 
  <br/><br/>
 
+ <label for="nombre">Nombre:</label><br>
+
+ <input type="text" name="name_user" required>
+
+ <br/><br/>
+
+ <label for="nombre">Apellido paterno:</label><br>
+
+ <input type="text" name="ap_paterno" required>
+
+ <br/><br/>
+
+ <label for="nombre">Apellido materno:</label><br>
+
+ <input type="text" name="ap_materno" required>
+
+ <br/><br/>
+
  
  <!--Password-->
 
