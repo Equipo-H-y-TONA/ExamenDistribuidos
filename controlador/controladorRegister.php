@@ -2,6 +2,7 @@
 <?php
 
  
+
  $host_db = "localhost";
 
  $user_db = "root";
@@ -26,7 +27,7 @@
 
  $buscarUsuario = "SELECT * FROM $tbl_name
 
- WHERE nombre_usuario = '$_POST[username]' ";
+ WHERE nick = '$_POST[username]' ";
 
  $result = $conexion->query($buscarUsuario);
 
@@ -54,7 +55,7 @@
 
  
 
- $query = "INSERT INTO Usuarios (nombre_usuario, password)
+ $query = "INSERT INTO Usuario (nick, password)
 
            VALUES ('$_POST[username]', '$hash')";
 
