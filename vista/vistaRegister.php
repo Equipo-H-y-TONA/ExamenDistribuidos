@@ -11,7 +11,7 @@
 	<h1>Registrese en nuestra libreria</h1>
 </header>
 
- <form action="../controlador/controladorRegister.php" method="post"> 
+ <form action="controlador/controladorRegister.php" method="post"> 
 
  <hr />
 
